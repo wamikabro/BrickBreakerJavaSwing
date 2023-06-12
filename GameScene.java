@@ -99,7 +99,7 @@ public class GameScene extends JPanel implements ActionListener, KeyListener, Ru
             paint.drawString("You Lost. Score: " + score, 225, 300);
 
             paint.setFont(new Font("times new roman", Font.BOLD, 25));
-            paint.drawString("Press Enter to Try Again. " + score, 200, 350);
+            paint.drawString("Press Enter to Try Again. ", 200, 350);
         }
 
         // If Won
@@ -198,7 +198,7 @@ public class GameScene extends JPanel implements ActionListener, KeyListener, Ru
         if(e.getKeyCode()==KeyEvent.VK_ENTER)
             if(!play){
                 score = 0;
-                numberOfBricks = Main.bricksRow + Main.bricksColumn;
+                numberOfBricks = Main.bricksRow * Main.bricksColumn;
                 setHorizontalBallPosition(200);
                 setVerticalBallPosition(300);
                 playerPositionX = 320;
