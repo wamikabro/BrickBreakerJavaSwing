@@ -198,6 +198,7 @@ public class GameScene extends JPanel implements ActionListener, KeyListener, Ru
         if(e.getKeyCode()==KeyEvent.VK_ENTER)
             if(!play){
                 score = 0;
+                // hfhfhsdof
                 numberOfBricks = Main.bricksRow * Main.bricksColumn;
                 setHorizontalBallPosition(200);
                 setVerticalBallPosition(300);
